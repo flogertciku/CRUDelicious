@@ -1,0 +1,17 @@
+@model Login
+<h2>This is Login partial</h2>
+
+<form asp-action="Login" method="post">
+
+      <div>
+        <label asp-for="LoginEmail"></label>
+        <input asp-for="LoginEmail">
+        <span asp-validation-for="LoginEmail"> </span>
+    </div>
+      <div>
+        <label asp-for="LoginPassword"></label>
+        <input asp-for="LoginPassword">
+        <span asp-validation-for="LoginPassword"> </span>
+    </div>
+    <input type="submit" value="Login">
+</form>
